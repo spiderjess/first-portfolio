@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Container for grid -->
+    <div class="container" id="portfolio">
+
+        <!-- Name Section -->
+        <div class="section" id="nameSection">
+            <div class="nameTitle">
+                <h1 class="name">Jessica Dickerson</h1>
+                <h2 class="title">Full-Stack Developer</h2>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contactInfo">
+                <h4 id="contactInfo">&#9660;Phoenix, AZ</h4>
+                <h4 id="contactInfo">☎ (602)795-6296</h4>
+                <h4 id="contactInfo">✉ jessicaldickerson@outlook.com</h4>
+            </div>
+        </div>
+
+        <!-- About and Skills Section -->
+        <div class="section" id="mainSection">
+            <div class="aboutSection">
+                <h1 class="sectionTitle">About.</h1>
+                <h3 id="aboutInfo">A knowledge-driven Full Stack Developer with strong problem-solving skills.
+                    A tenacious professional with a positive outlook and the ability to work
+                    effectively either individually or in a group setting.
+                </h3>
+            </div>
+
+            <div class="skillsSection">
+                <h1 class="sectionTitle">Skills.</h1>
+                <div class="collapseContainer">
+
+                    <!-- Collapsible languages -->
+                    <div class="languages">
+                        <button class="collapsible">
+                            <h4 class="skillTitle"> Languages &#9662;</h4>
+                        </button>
+                        <div class="content">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>ES6</li>
+                            <li>NoSQL</li>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible libraries -->
+                    <div class="libraries">
+                        <button class="collapsible">
+                            <h4 class="skillTitle"> Libraries &#9662;</h4>
+                        </button>
+                        <div class="content">
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>D3</li>
+                            <li>Express.js</li>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible frameworks -->
+                    <div class="frameworks">
+                        <button class="collapsible">
+                            <h4 class="skillTitle"> Frameworks &#9662;</h4>
+                        </button>
+                        <div class="content">
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section" id="educationSection">
+            <h1 class="sectionTitle">Education.</h1>
+
+            <!-- First School -->
+            <div class="school">
+                <h3 class="eduSchool">Arizona State University- West</h3>
+                <p class="eduDate">May 2015</p>
+                <h4 class="eduAbout">B.A. in Psychology</h4>
+
+
+            </div>
+            <hr class="divider">
+
+            <!-- Second School -->
+            <div class="school">
+                <h3 class="eduSchool">Persevere</h3>
+                <p class="eduDate">September 2020</p>
+                <h4 class="eduAbout">Full-Stack Certification</h4>
+
+                <p class="eduCert">Responsive Web Design</p>
+                <p class="eduCert">JavaScript Algorithms and Data Structures</p>
+                <p class="eduCert">Front End Libraries</p>
+                <p class="eduCert">Data Visualization</p>
+                <p class="eduCert">APIs and Microservices</p>
+                <p class="eduCert">Information Security and Quality Assurance</p>
+
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section" id="projectsSection">
+            <h1 class="sectionTitle">Projects.</h1>
+            <div class="projectArrow"></div>
+
+            <!-- Collapsible project section for mobile only -->
+            <div class="collapseProjectContainer">
+                <button class="collapsibleProject">Tech Duck &#9662;</button>
+                <div class="contentProject">
+                    <h4 class="projMain">A resume building site targeted toward individuals in the tech industry.</h4>
+                    <p class="projAbout">Responsible for the jQuery functionality on a 6 person team.</p>
+                    <p class="projAbout">Project utilized HTML5, CSS3, JavaScript, and jQuery.</p>
+                </div>
+            </div>
+            <img src="/Images/techDuckScreenshot.PNG" id="image">
+
+            <!-- Project Section for desktop and ipad version -->
+            <div class="projectInfo">
+                <div class="project">
+                    <h2>Tech Duck</h2>
+                    <hr class="projectDivider">
+                    <h4 class="projMain">A resume building site targeted toward individuals in the tech industry.</h4>
+                    <p class="projAbout">Responsible for the jQuery functionality on a 6 person team.</p>
+                    <p class="projAbout">Project utilized HTML5, CSS3, JavaScript, and jQuery.</p>
+                </div>
+            </div>
+            <div class="projectArrow"></div>
+
+            <!-- Collapsible project section for mobile only -->
+            <div class="collapseProjectContainer">
+                <button class="collapsibleProject">Book Maven &#9662;</button>
+                <div class="contentProject">
+                    <h4 class="projMain">A full-stack CRUD reading community web application with individual user
+                        accounts.
+                        Users can search for books they have read and rate those books.</h4>
+                    <p class="projAbout">Responsible for the functionality of the website, including the back-end
+                        elements and React on a 2 person team.</p>
+                    <p class="projAbout">Project utilized HTML5, CSS3, Bootstrap, JavaScript, React, Ajax, Node.js,
+                        Express, MongoDB, and Mongoose.</p>
+                </div>
+
+            </div>
+
+            <img src="/Images/bookMaven.png" id="image">
+
+            <!-- Project Section for desktop and ipad version -->
+            <div class="projectInfo">
+                <div class="project">
+                    <h2>Book Maven</h2>
+                    <hr class="projectDivider">
+                    <h4 class="projMain">A full-stack CRUD reading community web application with individual user
+                        accounts.
+                        Users can search for books they have read and rate those books.</h4>
+                    <p class="projAbout">Responsible for the functionality of the website, including the back-end
+                        elements and React on a 2 person team.</p>
+                    <p class="projAbout">Project utilized HTML5, CSS3, Bootstrap, JavaScript, React, Ajax, Node.js,
+                        Express, MongoDB, and Mongoose.</p>
+                </div>
+            </div>
+
+            <div class="projectArrow"></div>
+
+            <!-- Collapsible project section for mobile only -->
+            <div class="collapseProjectContainer">
+                <button class="collapsibleProject">Message Board &#9662;</button>
+                <div class="contentProject">
+                    <h4 class="projMain">A full CRUD app in which a user can create an account, then login to access a
+                        message board. The
+                        user can create
+                        posts and comment on the posts of others.</h4>
+                    <p class="projAbout">Responsible for all elements of the project.</p>
+                    <p class="projAbout">Utilized HTML5, CSS3, Bootstrap, JavaScript, React, Node.js, Express, MongoDB,
+                        and Mongoose.</p>
+                </div>
+
+            </div>
+            <img src="/Images/messageboard.png" id="image">
+
+            <!-- Project Section for desktop and ipad version -->
+            <div class="projectInfo">
+                <div class="project">
+                    <h2>Message Board</h2>
+                    <hr class="projectDivider">
+                    <h4 class="projMain">A full CRUD app in which a user can create an account, then login to access a
+                        message board. The
+                        user can create
+                        posts and comment on the posts of others.</h4>
+                    <p class="projAbout">Responsible for all elements of the project.</p>
+                    <p class="projAbout">Utilized HTML5, CSS3, Bootstrap, JavaScript, React, Node.js, Express, MongoDB,
+                        and Mongoose.</p>
+                </div>
+            </div>
+            <!-- To the top button -->
+            <a href="#portfolio" id="topButton">&#8896;<br></a>
+        </div>
+
+        <!-- Connect Section -->
+        <div class="section connectSection" id="linksSection">
+            <h1 class="connectTitle">Connect.</h1>
+            <!-- Links -->
+            <div class="links">
+                <!-- uploaded icon for github, need other icons (used circle icon in place) -->
+                <a href="" id="links"><img src="Images/gitHub.PNG" style="width: 28px; border-radius: 10px">
+                    GitHub</a><br><br>
+                <a href="" id="links">&#9673; LinkedIn</a><br><br>
+                <a href="" id="links">&#9673; Other</a>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="section" id="footer">
+            <!-- Empty for now -->
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

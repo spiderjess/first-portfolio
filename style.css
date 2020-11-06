@@ -1,0 +1,586 @@
+body {
+    background-image: url(/Images/diagonal_striped_brick.png);
+    background-attachment: fixed;
+    font-family: reem kufi;
+    color: #696969;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    padding-left: 8px;
+    padding-right: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Start of grid */
+.container {
+  width: 99%;
+  display: grid;
+  grid-template-columns: 26% 74%;
+  grid-template-rows: 25% 55% 18% 5%;
+  grid-row-gap: 1%;
+  grid-column-gap: 1%;
+  grid-template-areas:
+    "name about"
+    "education projects"
+    "links projects"
+    "footer projects";
+}
+
+#nameSection {
+  grid-area: name;
+}
+
+#linksSection {
+  grid-area: links;
+}
+
+#skillsSection {
+  grid-area: skills;
+}
+
+#educationSection {
+  grid-area: education;
+}
+
+#projectsSection {
+  grid-area: projects;
+}
+/* End of grid */
+
+/* Sections and Titles */
+.section {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.sectionTitle {
+  text-decoration-line: underline;
+  text-decoration-color: #485167b6;
+}
+
+.connectTitle {
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+}
+
+/* Name and title section */
+.nameTitle {
+    background-color: #485167;
+    color: #fff;
+    line-height: 60px;
+    position: relative;
+    top: -27px;
+}
+
+.name {
+    font-size: 40px;
+}
+/* End of name and title section */
+
+/* About and Skills Section */
+#mainSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 1%;
+  grid-template-areas:
+    "about skills";
+}
+
+.aboutSection {
+  grid-area: about;
+}
+
+#aboutInfo {
+  font-size: 1.5vw;
+}
+
+.skillsSection{
+  grid-area: skills;
+}
+
+.skillTitle {
+  font-size: 12px;
+}
+
+/* Skills grid and collapsible skills list */
+
+.collapseContainer {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-areas:
+    "languages libraries frameworks";
+}
+
+.languages {
+  grid-area: languages;
+}
+
+.libraries {
+  grid-area: libraries;
+}
+
+.frameworks {
+  grid-area: frameworks;
+}
+
+.collapsible {
+  background-color: #485167;
+  color: whitesmoke;
+  word-spacing: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  text-align: center;
+  font-family: reem kufi;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+ }
+
+.active, .collapsible:hover {
+  background-color: #485167b6;
+  height: 50px;
+}
+
+.content {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  font-family: reem kufi;
+  line-height: 20px;
+  width: 80%;
+}
+/* End of collapsible skills container */
+
+/* End of About and Skills Section */
+
+/* Education Section Start */
+.divider {
+  width: 90%;
+  border-color: #485167b6;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.school {
+    line-height: 15px;
+}
+
+.eduSchool {
+    color: #485167e1;
+}
+
+.eduAbout, .eduDate {
+    padding-left: 50px;
+}
+
+.eduCert {
+  padding-left: 80px;
+}
+/* End of education section */
+
+/* Connect Section */
+
+.connectSection {
+  background-color: #485167;
+  color: #fff;
+}
+
+.contactInfo, .links {
+  line-height: 15px;
+}
+
+#links {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* End of connect section */
+
+/* Project Section Start */
+
+/* Project container */
+.projectInfo {
+    float: right;
+    width: 40%;
+  }
+  
+  /* The actual project info */
+  .projectInfo .project {
+    visibility: visible;
+    height: 330px;
+    background-color: #485167;
+    color: #fff;
+    padding: 5px 0;
+    line-height: 20px;
+  }
+  
+  /* projectInfo arrow */
+  .projectArrow {
+    position: relative;
+    top: 7%;
+    right: 40%;
+    border-width: 32px;
+    border-style: solid;
+    border-color:  transparent #485167 transparent transparent;
+  }
+
+  .projMain {
+    font-size: 1.2vw;
+    line-height: 18px;
+    font-weight: 100;
+    color: #fff;
+}
+  
+  .projAbout {
+    color: #BCBCBE;
+    line-height: 16px;
+    font-size: 1.2vw;
+}
+
+  .projectDivider {
+    border-color: #fff;
+}
+
+  #image {
+    width: 60%;
+    height: 340px;
+}
+
+/* Collapsible project */
+.collapsibleProject {
+  background-color: #485167;
+  color: whitesmoke;
+  word-spacing: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  text-align: center;
+  font-family: reem kufi;
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+ }
+
+.active, .collapsibleProject:hover {
+  background-color: #485167b6;
+  height: 50px;
+}
+
+.contentProject {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #485167;
+  font-family: reem kufi;
+  line-height: 20px;
+  width: fit-content;
+}
+/* End of collapsible project */
+
+#topButton {
+  position: relative;
+  left: 46%;
+  text-decoration: none;
+  color: #485167;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* End of Project Section */
+
+/* Media query for iPad Pro */
+@media only screen and (max-width: 1024px){
+
+h4{
+  font-size: 15px;
+}
+
+/* Project Section Start */
+
+/* Project container */
+.projectInfo {
+  float: right;
+  width: 40%;
+}
+
+/* The actual project info */
+.projectInfo .project {
+  visibility: visible;
+  height: 340px;
+  background-color: #485167;
+  color: #fff;
+  padding: 5px 0;
+  line-height: 20px;
+}
+
+/* projectInfo arrow */
+.projectArrow {
+  position: relative;
+  top: 7%;
+  right: 40%;
+  border-width: 32px;
+  border-style: solid;
+  border-color:  transparent #485167 transparent transparent;
+}
+
+#image {
+  width: 60%;
+  height: 350px;
+}
+
+/* End of project section */
+
+}
+
+/* Media query for iPad */
+  @media only screen and (max-width: 768px) {
+
+    li {
+      font-size: 13px;
+    }
+
+    /* Grid for ipad */
+    .container {
+        width: 99%;
+        display: grid;
+        grid-template-columns: 27% 73%;
+        grid-template-rows: 25% 50% 22% 3%;
+        grid-row-gap: 1%;
+        grid-column-gap: 1%;
+        grid-template-areas:
+          "name about"
+          "education projects"
+          "links projects"
+          "footer projects";
+      }
+    /* End of grid for ipad */
+
+      /* Name and Title Section */
+      .nameTitle {
+        height: 40%;
+      }
+  
+      .name {
+        font-size: 35px;
+        line-height: 35px;
+      }
+  
+      .title {
+        font-size: 20px;
+        line-height: 20px;
+      }
+      
+      #contactInfo {
+        line-height: 10px;
+        font-size: 12px;
+        padding-right: 2px;
+    }
+      /* End of Name and Title Section */
+    
+    /* Project Section Start */
+    
+    /* Project container */
+    .projectInfo {
+        float: right;
+        width: 45%;
+      }
+      
+      /* The actual project info */
+      .projectInfo .project {
+        visibility: visible;
+        height: 255px;
+        background-color: #485167;
+        color: #fff;
+        padding: 5px 0;
+        line-height: 20px;
+      }
+      
+      /* projectInfo arrow */
+      .projectArrow {
+        position: relative;
+        top: 6%;
+        right: 45%;
+        border-width: 32px;
+        border-style: solid;
+        border-color:  transparent #485167 transparent transparent;
+      }
+
+    .projMain{
+      font-size: 14px;
+      padding-left: 5px;
+    }
+
+    .projAbout {
+      line-height: 10px;
+    }
+
+      #image {
+        width: 55%;
+        height: 265px;
+    }
+
+    /* End of project Section */
+
+  /* Skills collapsible list */
+    .collapsible {
+      height: 60px;
+    }
+
+    .collapsible:hover {
+      height: 60px;
+    }
+    /* End of collapsible list */
+
+  }
+
+  /* Media query for phones */
+  @media only screen and (max-width: 600px) {
+
+    /* Section titles */
+    .sectionTitle {
+      text-align: center;
+    }
+
+    .connectTitle {
+      text-align: center;
+    }
+
+    /* Grid for phones */
+    .container {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 19% 19% 41% 7% 2%;
+      grid-row-gap: .5%;
+      grid-template-areas:
+        "name"
+        "about"
+        "education"
+        "projects"
+        "links"
+        "footer";
+    }
+    /* End of grid */
+
+    /* Grid for about and skills section */
+    #mainSection {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 750px;
+      grid-column-gap: 1%;
+      grid-template-areas:
+        "about"
+        "skills";
+    }
+    /* End of grid for about and skills section */
+
+    /* Grid for collapsibles and collapsible */
+    .collapseContainer {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "languages libraries frameworks";
+    }
+
+    .collapsible {
+      height: 40px;
+    }
+
+    .collapsible:hover {
+      height:40px;
+    }
+
+    /* End of collapsibles */
+
+/* Project Section Start */
+
+/* Project container */
+.projectInfo {
+  width: 100%;
+}
+
+/* The actual project info */
+.projectInfo .project {
+  visibility: visible;
+  height: 225px;
+  background-color: #485167;
+  color: #fff;
+  padding: 5px 0;
+  line-height: 20px;
+}
+
+.projAbout {
+  font-size: 3vw;
+  text-align: center;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+}
+
+/* End of project section */
+
+/* Name and title section */
+  .nameTitle {
+    padding-top: 25px;
+    height: 140px;
+    text-align: center;
+  }
+  #contactInfo{
+      font-size: 15px;
+      text-align: center;
+    }
+  /* End of name and title section */
+
+  /* About and skills section */
+  #aboutInfo {
+    font-size: 4vw;
+    text-align: center;
+  }
+    .skillTitle {
+      font-size: 12px;
+    }
+    /* End of about and skills section */
+
+    /* Education section */
+    .eduCert {
+      padding-left: 110px;
+    }
+/* End of education section */
+
+/* Connect Section */
+.connectSection {
+  background-color: #485167;
+  color: #fff;
+  text-align: center;
+}
+
+  }
+
+
+
+
+  /* .glow {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } */
